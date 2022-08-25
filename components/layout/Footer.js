@@ -19,30 +19,30 @@ const footer = (props) => {
   return (
     <footer className={FooterStyled.footer}>
       <section className={FooterStyled.datosDeContacto}>
-        <ul>
+        <ul className={FooterStyled.list_datosDeContacto}>
           <li title='Número de telefono'>
-            <FontAwesomeIcon icon={faMobile} />
-            (+506)50142609
+          <FontAwesomeIcon icon={faMobile}/>
+            (+506) 50142609
           </li>
           <li title='Correo'>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope}/>
             betancourtmoran@gmail.com
           </li>
         </ul>
       </section >
-      {socialMedia.map((item, key) =>
-        <button key={key}>
-          <a className={FooterStyled.Icon}>
-            <FontAwesomeIcon icon={item} />
-          </a>
-        </button>)}
+      <section className={FooterStyled.socialMedia}>
+        {socialMedia.map((item, key) =>
+          <button key={key}>
+            <a>
+              <FontAwesomeIcon icon={item} />
+            </a>
+          </button>
+          )}
+      </section>
       <div className={FooterStyled.Creador}>
-        <p title="Creador">Michael Betancourt - Desarrollador de Software</p>
-      </div>
-      <div className={FooterStyled.CopyRigth}>
+        <p title="Creador">Michael Betancourt Mora- Informático</p>
         <p>©2020 - Créditos de la web</p>
       </div>
-
     </footer>
 
   )

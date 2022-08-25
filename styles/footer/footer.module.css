@@ -1,13 +1,116 @@
-.footer{
+/*Desktop*/
+.footer {
 
-    position: relative;
-    left: 0;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1b273d;
+    min-height: 8.5rem;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
 }
-.datosDeContacto{
 
+.datosDeContacto {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.list_datosDeContacto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
 }
-.Icon{}
-.Creador{}
-.CopyRigth{}
+
+.list_datosDeContacto li {
+
+    padding: 0.25rem 0.1rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    color: #8396af;
+    width: auto;
+
+}
+
+.list_datosDeContacto li svg {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.socialMedia {
+
+    display: flex;
+    justify-content: right;
+
+}
+
+.socialMedia button {
+
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    margin: 0 1rem 0 0;
+    padding: 0;
+
+}
+
+.socialMedia button a svg {
+
+    font-size: 1.5rem;
+}
+
+.Creador {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.Creador p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8f9aa7;
+    font-size: 0.8313rem;
+    opacity: 0.6;
+    color: #9FD4CA;
+    flex-basis: 100%;
+    border-radius: 10px;
+}
+
+/*Telefonos y tablets*/
+
+@media (orientation:portrait) {
+
+    .footer{
+       justify-content: center;
+        padding: 0 1.25rem 0 1.25rem;
+    }
+    .datosDeContacto{
+        padding: 1rem;
+        
+    }
+    .list_datosDeContacto{
+       word-break: break-word;
+       padding: 0;
+    }
+}

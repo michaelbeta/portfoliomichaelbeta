@@ -22,9 +22,6 @@ const Home = (props) => {
         openGraphType="website"
         icon="/beta_large.ico"
       />
-      <CardPresentation
-        image={ImageMichael}
-        alt={"Michael Betancourt"} />
     </Layout>
     
     </div>
