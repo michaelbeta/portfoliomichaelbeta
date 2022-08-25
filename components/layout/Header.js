@@ -1,10 +1,24 @@
 import React from 'react';
-//import { HeaderContainer, Icon, Menu } from '../../styles/layout/header.css';
+import HeaderStyled from '../../styles/header/header.module.css';
+import Link from "next/link";
+import HeaderLinks from "../../models/links/headerLinks";
 
 const Header = () => {
     return (
         <div>
-            Beta
+            <nav className={HeaderStyled.menu}>
+                <ul>
+                    {HeaderLinks.map((links, key) => {
+                        return (
+                            <li key={key}>
+                                <Link href={links.url} >
+                                {links.name}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
         </div>
 
     )
