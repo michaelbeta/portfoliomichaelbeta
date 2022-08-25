@@ -67,7 +67,10 @@
     padding: 0;
 
 }
+.socialMedia button a:hover{
 
+   color: #d6d0ab;
+}
 .socialMedia button a svg {
 
     font-size: 1.5rem;
@@ -96,7 +99,10 @@
     flex-basis: 100%;
     border-radius: 10px;
 }
+.Creador a:hover{
 
+    color: #d6d0ab;
+ }
 /*Telefonos y tablets*/
 
 @media (orientation:portrait) {

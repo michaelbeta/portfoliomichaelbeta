@@ -15,7 +15,11 @@ import {
 
 const footer = (props) => {
 
-  const socialMedia = [faGithub, faLinkedin, faFacebook, faInstagram, faFigma];
+  const socialMedia = [
+    ["https://github.com/michaelbeta",faGithub], 
+    ["https://www.linkedin.com/in/michael-betancourt-mora/",faLinkedin], 
+    ["https://www.facebook.com/michael.betancourt.39794/",faFacebook],
+    ["https://www.figma.com/@MichaelBeta",faFigma]];
   return (
     <footer className={FooterStyled.footer}>
       <section className={FooterStyled.datosDeContacto}>
@@ -33,15 +37,16 @@ const footer = (props) => {
       <section className={FooterStyled.socialMedia}>
         {socialMedia.map((item, key) =>
           <button key={key}>
-            <a>
-              <FontAwesomeIcon icon={item} />
+            <a href={item[key,0]}>
+              <FontAwesomeIcon icon={item[key,1]} />
             </a>
           </button>
-          )}
+          )
+          }
       </section>
       <div className={FooterStyled.Creador}>
         <p title="Creador">Michael Betancourt Mora- Informático</p>
-        <p>©2020 - Créditos de la web</p>
+        <p><a href='/'>©2020 - Créditos de la web</a></p>
       </div>
     </footer>
 
