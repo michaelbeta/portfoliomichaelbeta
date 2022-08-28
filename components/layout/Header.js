@@ -1,25 +1,22 @@
 import React from 'react';
 import HeaderStyled from '../../styles/header/header.module.css';
-import Link from "next/link";
-import HeaderLinks from "../../models/links/headerLinks";
+import LogoN from "../../public/logoNavegacion.svg"
+import MenuHook from "../../hooks/headerMenu/menu";
+import MenuButton from "./menuButton";
+import MenuDefault from "./menuDefault";
 
 const Header = () => {
+
+    const [open,handleClick] = MenuHook();
+
     return (
-        <div>
-            <nav className={HeaderStyled.menu}>
-                <ul>
-                    {HeaderLinks.map((links, key) => {
-                        return (
-                            <li key={key}>
-                                <Link href={links.url} >
-                                {links.name}
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
-        </div>
+        <header className={HeaderStyled.header}>
+            <a href='/home' className={HeaderStyled.logo}>
+                <LogoN />
+            </a>
+            <MenuDefault open={open}/>
+            <MenuButton open={open} handleClick={handleClick} />
+        </header>
 
     )
 }

@@ -34,7 +34,7 @@ const footer = (props) => {
       </section>
       <div className={FooterStyled.Creador}>
         <p title="Creador">Michael Betancourt Mora- Informático</p>
-        <p><a href='/'>©2020 - Créditos de la web</a></p>
+        <p><a href='/'>©2022 - Créditos de la web</a></p>
       </div>
     </footer>
 
