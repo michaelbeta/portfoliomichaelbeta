@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/header/menu.css'
 import Head from 'next/head';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";

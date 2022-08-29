@@ -1,0 +1,17 @@
+.nav__linkActivo{
+
+    background-color: rgba(80, 152, 170, 0.555);
+    border-radius: 25%;
+}
+@media (orientation:portrait) {
+
+    .nav__linkActivo{
+
+        background-color:transparent;
+        border-radius: 0;
+    }
+    .nav__linkActivo a{
+
+        color: rgba(255, 255, 255, 0.555) !important;
+    }
+}
