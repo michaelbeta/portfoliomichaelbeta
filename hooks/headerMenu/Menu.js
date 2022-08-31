@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 
-const menu = () => {
+const Menu = () => {
 
     const [nav__link, setnav__link] = useState("NoActivo");
     const [selected,setSelected] = useState(0);
@@ -14,4 +14,4 @@ const menu = () => {
     return [nav__link,selected,cambiarClass_Y_Key];
 }
 
-export default menu
+export default Menu
