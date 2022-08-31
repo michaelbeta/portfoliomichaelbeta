@@ -3,8 +3,8 @@ import HeaderStyled from '../../styles/header/header.module.css';
 import LogoN from "../../public/logoNavegacion.svg"
 import MenuBar from "../../hooks/headerMenu/menuBar";
 import Menu from "../../hooks/headerMenu/menu";
-import MenuButton from "./MenuButton";
-import MenuDefault from "./MenuDefault";
+import MenuButton from "./MenuButton.js";
+import MenuDefault from "./MenuDefault.js";
 import Link from "next/link";
 
 const Header = () => {
