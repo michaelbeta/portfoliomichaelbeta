@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const menuBar = () => {
+const MenuBar = () => {
 
     const [open, setOpen] = useState(false);
 
@@ -10,4 +10,4 @@ const menuBar = () => {
     return [open,handleClick]
 }
 
-export default menuBar
+export default MenuBar
