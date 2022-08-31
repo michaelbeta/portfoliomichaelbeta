@@ -6,7 +6,7 @@ import HeaderStyled from '../../styles/header/header.module.css';
 const menuDefault = ({ open, nav__link,selected,cambiarClass_Y_Key }) => {
     return (
         /*En el style evaluamos el open si es false se oculta el menu*/
-        <nav className={`${HeaderStyled.menu}`} open={open} style={{ right: (open ? "0" : "-100%") }}>
+        <nav className={`${HeaderStyled.menu}`} open={open} style={{ right: (open ? "0" : "100%") }}>
             <ul>
                 {HeaderLinks.map((links, key) => {
                     

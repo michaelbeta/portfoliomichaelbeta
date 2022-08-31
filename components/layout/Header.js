@@ -3,8 +3,8 @@ import HeaderStyled from '../../styles/header/header.module.css';
 import LogoN from "../../public/logoNavegacion.svg"
 import MenuBar from "../../hooks/headerMenu/menuBar";
 import Menu from "../../hooks/headerMenu/menu";
-import MenuButton from "./menuButton";
-import MenuDefault from "./menuDefault";
+import MenuButton from "./MenuButton";
+import MenuDefault from "./MenuDefault";
 import Link from "next/link";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     const [nav__link, selected, cambiarClass_Y_Key] = Menu();
 
     return (
-        <header className={HeaderStyled.header}>
+        <header className={`${HeaderStyled.header} navbar`}>
             <Link href='/home'>
                 <a className={HeaderStyled.logo}>
                     <LogoN />

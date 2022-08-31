@@ -4,14 +4,15 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: space-between;
     align-items: center;
-    top: 0;
     width: 100%;
     background: #1b273d;
     padding: 0 3rem 0 3rem;
-   
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 /*Le da el efecto al logo*/
@@ -29,27 +30,27 @@
 }
 
 /*Fin de efecto*/
-.logo {
-
-    height: inherit;
-    width: max-content;
-
+.logo svg{
+    vertical-align: baseline;
 }
 
 /*MENU*/
 .menu {
 
+    display: flex;
     font-family: "Raleway";
     flex-direction: row;
-    position: initial;
-    height: auto;
     justify-content: center;
+    align-items: center;
 }
 
 .menu ul {
 
     list-style: none;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .menu ul li a::before {
@@ -93,14 +94,14 @@
     }
 
     .menu {
-
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         background: #1b273d;
         top: 4.5rem;/*Mantiene el menu debajo del header*/
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
         transition: right 0.3s linear;
@@ -117,14 +118,16 @@
     }
     
     .menu ul{
+       
         display: flex;
         flex-direction: column;
+        align-items: stretch;
         padding: 2vh;
         width: 100%; 
         height: 100vh; 
         background:url("../../images/codigo.png") no-repeat -20vw center;
         background-size: 100vw;
-        
+        justify-content: flex-start;
     }
     .menu ul li{
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.493);

@@ -1,12 +1,11 @@
 /*Desktop*/
 .footer {
-
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: auto;
     background: #1b273d;
     min-height: 8.5rem;
     color: white;
@@ -14,6 +13,8 @@
     align-items: center;
     font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility;
+    padding: 2rem 0 0 0;
+    clear: both;
 }
 
 .datosDeContacto {
@@ -74,6 +75,7 @@
 .socialMedia button a svg {
 
     font-size: 1.5rem;
+    color: #ffffff;
 }
 
 .Creador {
@@ -95,9 +97,13 @@
     color: #8f9aa7;
     font-size: 0.8313rem;
     opacity: 0.6;
-    color: #9FD4CA;
     flex-basis: 100%;
     border-radius: 10px;
+}
+.Creador p a {
+
+    color: #8f9aa7;
+    text-decoration: none;
 }
 .Creador a:hover{
 

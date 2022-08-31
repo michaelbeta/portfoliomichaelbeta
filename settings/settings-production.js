@@ -9,7 +9,7 @@ const settings = {
       +"¡Si nunca me das la oportunidad no conoceré mi potencial!",
       social: {
         graphic:
-        "/images/beta_little.jpg",
+        "../images/Beta.png",
         facebook: "Michael Betancourt",
       }
     }
