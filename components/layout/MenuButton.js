@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderStyled from '../../styles/header/header.module.css';
 
-function MenuButton({ open, handleClick }) {
+function MenuButton({ open, handleClick }) {/*Crear y controla el menu de telefono */
     return !open ? (
       <button className={HeaderStyled.button} onClick={handleClick} >
         <svg viewBox="0 0 100 80" width="30" height="30" fill="#1b273d">

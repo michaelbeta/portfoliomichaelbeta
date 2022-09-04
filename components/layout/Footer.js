@@ -14,11 +14,11 @@ const footer = (props) => {
         <ul className={FooterStyled.list_datosDeContacto}>
           <li title='Número de telefono'>
           <FontAwesomeIcon icon={faMobile}/>
-            (+506) 50142609
+            {props.telefono}
           </li>
           <li title='Correo'>
             <FontAwesomeIcon icon={faEnvelope}/>
-            betancourtmoran@gmail.com
+            {props.correo}
           </li>
         </ul>
       </section >
@@ -33,8 +33,8 @@ const footer = (props) => {
           }
       </section>
       <div className={FooterStyled.Creador}>
-        <p title="Creador">Michael Betancourt Mora- Informático</p>
-        <p><a href='/'>©2022 - Créditos de la web</a></p>
+        <p title="Creador">{props.creador}</p>
+        <p><a href='/'>{props.derechos}</a></p>
       </div>
     </footer>
 

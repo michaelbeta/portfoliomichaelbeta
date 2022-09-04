@@ -68,7 +68,7 @@
     padding: 0;
 
 }
-.socialMedia button a:hover{
+.socialMedia button svg:hover{
 
    color: #d6d0ab;
 }

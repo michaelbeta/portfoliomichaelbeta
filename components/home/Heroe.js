@@ -1,25 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Michael from "../../images/Beta.png";
+import Michael from "../../images/Beta_.png";
 import HeroeStyled from "../../styles/home/heroe.module.css";
+import Iconos from '../../models/footer/iconos'
 import Image from "next/image";
-import {
-  faGithub,
-  faLinkedin,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Heroe = (props) => {
 
 
   return (
-    <section title="Bienvenido" id={HeroeStyled.presentation}>
+    <section id={HeroeStyled.home}>
       <div className={HeroeStyled.heroe_container}>
         <div className={HeroeStyled.heroe_container_image}>
           <Image src={Michael}
             alt='Michael'
-            width={250}
-            height={250}
+            width={650}
+            height={650}
             layout='responsive'
             className={HeroeStyled.Yo}
             priority={true}
@@ -27,13 +23,19 @@ const Heroe = (props) => {
           />
         </div>
         <div className={HeroeStyled.heroe_container_inf}>
-          <h1 className={HeroeStyled.heroe_container_title}>{props.titulo}</h1>
-          <h2 className={HeroeStyled.heroe_container_subtitle}>{props.subtitulo}</h2>
+          <p title="saludo" className={HeroeStyled.heroe_container_saludo}>{props.saludo}</p>
+          <h1 title="Titulo" className={HeroeStyled.heroe_container_title}>{props.titulo}</h1>
           <p>{props.descripcion}</p>
-          <div className={HeroeStyled.heroe_container_logo}>
-            <a href="https://github.com/michaelbeta"><FontAwesomeIcon icon={faGithub} /></a>
-            <a href="https://www.facebook.com/michael.betancourt.39794/"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://www.linkedin.com/in/michael-betancourt-mora/"><FontAwesomeIcon icon={faLinkedin} /></a>
+          <div title="redes sociales" className={HeroeStyled.heroe_container_logo}>
+            {Iconos.map((item, key) =>
+              <button key={key}>
+                {key<Iconos.length-1 &&
+                <a href={item[key, 0]}>
+                  <FontAwesomeIcon icon={item[key, 1]} />
+                </a>}
+              </button>
+            )
+            }
           </div>
         </div>
       </div>

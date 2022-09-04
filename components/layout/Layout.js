@@ -10,7 +10,12 @@ const Layout = ({ children }) => {
       <main className={`${styles.container} ${styles['min-height']}`}>
         {children}
       </main>
-      <Footer />
+      <Footer 
+        telefono={"(+506) 50142609"}
+        correo={"betancourtmoran@gmail.com"}
+        creador={"Michael Betancourt Mora- Desarrollador de Software"}
+        derechos={"©2022 - Créditos de la web"}
+      />
     </>
   )
 }

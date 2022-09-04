@@ -1,0 +1,88 @@
+#SobreMi{   
+
+    width: 100%;
+    height: auto;
+    padding: 0 1rem 2rem 1rem;
+    font-family:  'Ralewayt','sans-serif', 'Optima';
+    padding: 1rem 0 1rem 0;
+}
+.SobreMi_container{
+	display: flex;
+    padding: 4rem 0 2rem 0;
+}
+.SobreMi_container p{
+
+    font-size: 1.2rem;
+    color:#444f5a;
+}
+.SobreMi_container article h1,.Estudios h2{
+	font-family: 'Finger Paint','cursive';
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.SobreMi_container > article{
+
+    width: 50%;
+    padding: 1rem;
+    overflow: hidden;
+}
+.SobreMi_container_info{
+
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.Skills_container_lista{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.Skills_container_lista svg:not(:active) {
+
+    /*transition: background-color 3000ms step-end;*/
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.Skills_container_lista svg:active{
+
+    /*flex-direction: row-reverse;*/
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+
+}
+.Skills_container_lista div *{
+
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+}
+.Skills_container_lista div{
+
+   padding: 1rem;
+}
+@media (orientation:portrait) {
+    #SobreMi{   
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .SobreMi_container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .SobreMi_container > article{
+
+        width: 100%;
+        padding: 0;
+    }
+    .Skills_container_lista{
+       
+       justify-content: center;
+       
+    
+    }
+
+}
