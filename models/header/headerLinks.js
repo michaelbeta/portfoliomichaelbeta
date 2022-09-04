@@ -1,19 +1,19 @@
 const headerLinks = [
     {
         name: 'Inicio',
-        url: '/home',
+        url: 'Home',
     }, 
     {
         name: 'Sobre mi',
-        url: '/sobre-mi/',
+        url: 'SobreMi',
     },
     {
         name: 'Contacto',
-        url: '/contacto/',
+        url: 'Contacto',
     },
     {
         name: 'Projectos',
-        url: '/projectos/',
+        url: 'Projectos',
     }
 ]
 

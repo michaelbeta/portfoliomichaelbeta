@@ -1,8 +1,7 @@
-#SobreMi{   
+#Container_SobreMi{   
 
     width: 100%;
     height: auto;
-    padding: 0 1rem 2rem 1rem;
     font-family:  'Ralewayt','sans-serif', 'Optima';
     padding: 1rem 0 1rem 0;
 }
@@ -64,7 +63,7 @@
    padding: 1rem;
 }
 @media (orientation:portrait) {
-    #SobreMi{   
+    #Container_SobreMi{   
 
         padding-left: 0;
         padding-right: 0;
