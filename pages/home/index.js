@@ -3,7 +3,7 @@ import SEO from "../../components/seo/SEO";
 import ImageMichael from "../../images/Beta.png";
 import Layout from '../../components/layout/Layout';
 import Heroe from "../../components/home/Heroe";
-import SobreMi from "../../components/sobreMi/sobreMi";
+import SobreMi from "../../components/SobreMi/SobreMi";
 import ScrollToTop from "react-scroll-to-top";
 import Proyectos from "../../components/proyecto/galeriaDeProyecto"
 
