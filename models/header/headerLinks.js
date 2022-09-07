@@ -8,12 +8,12 @@ const headerLinks = [
         url: 'SobreMi',
     },
     {
-        name: 'Contacto',
-        url: 'Contacto',
-    },
-    {
         name: 'Projectos',
         url: 'Projectos',
+    },
+    {
+        name: 'Contacto',
+        url: 'Contacto',
     }
 ]
 

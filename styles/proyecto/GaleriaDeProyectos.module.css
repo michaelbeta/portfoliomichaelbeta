@@ -1,0 +1,15 @@
+#galeriaDeProyectos{
+
+    width: 100%;
+    height: auto;
+    font-family:  'Ralewayt','sans-serif', 'Optima';
+    padding: 1rem 0 1rem 0;
+}
+.contenedorDeProyectos{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 4rem 0 2rem 0;
+}

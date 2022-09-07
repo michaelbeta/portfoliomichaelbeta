@@ -5,6 +5,7 @@ import Layout from '../../components/layout/Layout';
 import Heroe from "../../components/home/Heroe";
 import SobreMi from "../../components/sobreMi/sobreMi";
 import ScrollToTop from "react-scroll-to-top";
+import Proyectos from "../../components/proyecto/galeriaDeProyecto"
 
 const Home = (props) => {
 
@@ -42,6 +43,9 @@ const Home = (props) => {
             estudios={"En estos momentos me encuentro por finalizar el Bachillerato en Informática Empresarial en la UCR(Universidad de Costa Rica)."}
           />
         </div>
+        <Proyectos
+        
+        />
         <ScrollToTop smooth />
       </Layout>
     </>
