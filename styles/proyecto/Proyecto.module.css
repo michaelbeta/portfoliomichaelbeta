@@ -1,6 +1,150 @@
 .proyecto {
 
     position: relative;
-    overflow: hidden;
+    padding: 0.5rem;
+    flex-basis: 25%;
+}
+
+.proyecto:hover .descripcionProyecto {
+
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+    left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.imagenDelProyecto {
+
+    box-shadow: 0 3px 6px #0003;
     padding: 1rem;
+}
+
+.descripcionProyecto {
+
+    width: 96%;
+    height: 95%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    top: 0.4rem;
+    left: -1000px;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.descripcionProyecto h3 {
+
+    font-size: 1.8vw;
+    font-weight: 100;
+}
+
+.descripcionProyecto h3,
+.descripcionProyecto p,
+.descripcionProyecto div * {
+    margin-top: 0.2rem;
+}
+
+.descripcionProyecto p {
+    padding: 0 0.2rem 0 0.2rem;
+    word-break: break-word;
+    font-size: 1.2vw;
+}
+
+.LinkIconos {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.LinkIconos a * {
+
+    color: #fff;
+    font-size: 1.8vw;
+}
+
+.LinkIconos *:hover {
+
+    color: rgb(0, 0, 0);
+}
+
+.iconosDeTecnologias {
+
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.iconosDeTecnologias * {
+
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+@media (orientation:portrait) {
+    .proyecto {
+
+        flex-basis: 100%;
+    }
+
+    .descripcionProyecto {
+       
+        padding: 20%;
+    }
+    .descripcionProyecto h3 {
+
+        font-size: 4vw;
+    }
+    .descripcionProyecto p {
+
+        font-size: 3vw;
+    }
+    .LinkIconos a * {
+
+        font-size: 4vw;
+    }
+    .iconosDeTecnologias * {
+
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+}
+
+@media screen and (max-width: 970px) and (min-width: 700px) {
+
+    .proyecto {
+
+        flex-basis: 50%;
+    }
+    .descripcionProyecto {
+       
+        padding: 5vw;
+    }
+    .descripcionProyecto h3 {
+
+        font-size: 3vw;
+    }
+    .descripcionProyecto p {
+
+        font-size: 2vw;
+    }
+    .LinkIconos a * {
+
+        font-size: 3vw;
+    }
+    .iconosDeTecnologias * {
+
+        width: 2.5vw;
+        height: 2.5vw;
+    }
 }

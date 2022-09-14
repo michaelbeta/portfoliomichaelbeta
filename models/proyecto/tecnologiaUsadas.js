@@ -22,7 +22,7 @@ const tecnologiasQueUsa = (props) => {
     //Seleccionamos solo los svg que se indico con el props
     const ObtenerLosSvgNecesarios = Svgs.reduce((result, svg, index) => {
         props.map(element => {
-            if (element.toUpperCase() === nombresDeImagesMayuscalas[index]) result.push(svg);
+            if (element.toUpperCase() === nombresDeImagesMayuscalas[index]) {result.push(svg);}
         });
 
         return result;
