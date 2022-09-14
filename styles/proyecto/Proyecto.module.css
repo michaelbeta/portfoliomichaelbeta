@@ -83,6 +83,10 @@
     justify-content: space-around;
     padding: 1rem;
 }
+.iconosDeTecnologias svg:hover {
+
+   scale: 1.5;
+}
 
 .iconosDeTecnologias * {
 
