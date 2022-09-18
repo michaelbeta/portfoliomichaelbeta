@@ -6,6 +6,7 @@ import Heroe from "../../components/home/Heroe";
 import SobreMi from "../../components/SobreMi/SobreMi";
 import ScrollToTop from "react-scroll-to-top";
 import Proyectos from "../../components/proyecto/galeriaDeProyecto"
+import ContactaMe from "../../components/contacto/contactaMe";
 
 const Home = (props) => {
 
@@ -43,8 +44,10 @@ const Home = (props) => {
             estudios={"En estos momentos me encuentro por finalizar el Bachillerato en Informática Empresarial en la UCR(Universidad de Costa Rica)."}
           />
         </div>
-        <Proyectos
-        
+        <Proyectos />
+        <ContactaMe
+          Titulo="Contáctame"
+          Descripcion="Invite me to speak at your conference, tell me about your available job opportunities or just say hi :)"
         />
         <ScrollToTop smooth />
       </Layout>
