@@ -4,6 +4,9 @@ import Header from './Header';
 import styles from '../../styles/Home.module.css';
 
 const Layout = ({ children }) => {
+
+  const fecha = new Date();
+
   return (
     <>
       <Header />
@@ -14,7 +17,7 @@ const Layout = ({ children }) => {
         telefono={"(+506) 50142609"}
         correo={"betancourtmoran@gmail.com"}
         creador={"Michael Betancourt Mora- Desarrollador de Software"}
-        derechos={"©2022 - Créditos de la web"}
+        derechos={`${fecha.getFullYear()} - Créditos de la web`}
       />
     </>
   )

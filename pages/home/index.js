@@ -31,7 +31,7 @@ const Home = (props) => {
             saludo={"¡Hola!👋 Mi nombre es"}
             titulo={"Michael Betancourt"}
             descripcion={" Soy un Desarrollador de Software, amante de las computadoras y de la programación." +
-              " Actualmente estoy enfocado en especializarme en .Net y Next.js"}
+              " Actualmente trabajo para Pay Tech Solutions como programador"}
           />
           <SobreMi
             TituloSobreMi="Sobre mi"
@@ -47,7 +47,7 @@ const Home = (props) => {
         <Proyectos />
         <ContactaMe
           Titulo="Contáctame"
-          Descripcion="Invite me to speak at your conference, tell me about your available job opportunities or just say hi :)"
+          Descripcion="Si deseas conocer más sobre mi o hablar de una oportunidad laboral, no dudes en contactarme."
         />
         <ScrollToTop smooth />
       </Layout>

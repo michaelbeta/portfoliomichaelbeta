@@ -14,7 +14,7 @@ const footer = (props) => {
         <ul className={FooterStyled.list_datosDeContacto}>
           <li title='Número de telefono'>
           <FontAwesomeIcon icon={faMobile}/>
-            {props.telefono}
+            <a href={props.telefono}>{props.telefono}</a> 
           </li>
           <li title='Correo'>
             <FontAwesomeIcon icon={faEnvelope}/>
