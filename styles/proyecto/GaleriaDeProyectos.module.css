@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     font-family:  'Ralewayt','sans-serif', 'Optima';
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 2rem 2rem;
 }
 #galeriaDeProyectos h1{
 
@@ -16,5 +16,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem;
+    --margin: 1rem;
 }
+
