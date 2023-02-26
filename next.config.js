@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require("./next-i18next.config");
+//const { i18n } = require("./next-i18next.config");
 const nextConfig = {
   async redirects() {//Cambiar el index por home/index
     return [
@@ -31,7 +31,7 @@ const nextConfig = {
 
   reactStrictMode: true,
   swcMinify: true,
-  i18n,
+  //i18n,
 
 }
 
