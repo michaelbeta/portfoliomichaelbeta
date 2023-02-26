@@ -5,7 +5,7 @@ import Layout from '../../components/layout/Layout';
 import Heroe from "../../components/home/Heroe";
 import SobreMi from "../../components/SobreMi/SobreMi";
 import ScrollToTop from "react-scroll-to-top";
-import Proyectos from "../../components/proyecto/GaleriaDeProyecto"
+import Proyectos from "../../components/proyecto/galeriaDeProyecto"
 import ContactaMe from "../../components/contacto/contactaMe";
 
 const Home = (props) => {
