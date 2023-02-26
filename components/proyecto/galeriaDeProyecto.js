@@ -11,7 +11,7 @@ import ImagenProyecto2 from "../../images/proyecto/proyecto 2/Cartelera_pelicula
 import ImagenProyecto3 from "../../images/proyecto/proyecto 3/conversor.png"
 import {useRouter} from "next/router";
 
-const galeriaDeProyecto = () => {
+const GaleriaDeProyecto = () => {
     const URL = useRouter();
     return (
         <Element id='Projectos' name='Projectos'>
@@ -77,4 +77,4 @@ const galeriaDeProyecto = () => {
 }
 
 
-export default galeriaDeProyecto;
+export default GaleriaDeProyecto;
