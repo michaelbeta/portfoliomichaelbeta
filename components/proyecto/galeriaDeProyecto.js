@@ -9,9 +9,10 @@ import { Element } from 'react-scroll'
 import ImagenProyecto1 from "../../images/proyecto/proyecto 1/Carrusel rectangular.png"
 import ImagenProyecto2 from "../../images/proyecto/proyecto 2/Cartelera_peliculas.png"
 import ImagenProyecto3 from "../../images/proyecto/proyecto 3/conversor.png"
+import {useRouter} from "next/router";
 
 const galeriaDeProyecto = () => {
-
+    const URL = useRouter();
     return (
         <Element id='Projectos' name='Projectos'>
             <section id={Styled.galeriaDeProyectos}>
@@ -31,7 +32,8 @@ const galeriaDeProyecto = () => {
                         icono2={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
                         url2={"https://carrusel-en-next-js.vercel.app/"}
                         //Tecnologia iplementada
-                        tecnologiasImplementadas={Tecnolgias(["Nextjs", "css", "javascript"])}
+                        tecnologiasImplementadas={Tecnolgias(["Nextjs", "css", "javascript"],URL)}
+                        
 
                     />
                     <Proyecto

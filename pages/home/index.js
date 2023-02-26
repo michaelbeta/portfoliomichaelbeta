@@ -31,7 +31,7 @@ const Home = (props) => {
             saludo={"¡Hola!👋 Mi nombre es"}
             titulo={"Michael Betancourt"}
             descripcion={" Soy un Desarrollador de Software, amante de las computadoras y de la programación." +
-              " Actualmente trabajo para Pay Tech Solutions como programador"}
+              " Actualmente trabajo para Pay Tech Solutions como programador."}
           />
           <SobreMi
             TituloSobreMi="Sobre mi"

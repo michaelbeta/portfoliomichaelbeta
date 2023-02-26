@@ -1,4 +1,4 @@
-const tecnologiasQueUsa = (props) => {
+const tecnologiasQueUsa = (props,URL) => {
 
     //Creamos la conexion a la carpeta
     const reqSvgs = require.context('../../images/skills', true, /.svg$/);
@@ -6,7 +6,7 @@ const tecnologiasQueUsa = (props) => {
     let pathSVG = [];//array que guardará las direcciones
     //funcion que regresa los images
     const imagenesSVg = reqSvgs.keys().reduce((images, path) => {
-        const key = path.substring(path.lastIndexOf("http://localhost:3000/home/") + 1, path.lastIndexOf('.'))//path
+        const key = path.substring(path.lastIndexOf(URL) + 1, path.lastIndexOf('.'))//path
         pathSVG.push(key);//guardamos el path
         images[key] = reqSvgs(path).default//creamos la conexion al svg
         return images

@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <Footer 
-        telefono={"(+506) 50142609"}
         correo={"betancourtmoran@gmail.com"}
         creador={"Michael Betancourt Mora- Desarrollador de Software"}
         derechos={`${fecha.getFullYear()} - Créditos de la web`}
