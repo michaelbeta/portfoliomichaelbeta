@@ -23,7 +23,8 @@
     "react-dom": "18.2.0",
     "react-inspector": "^6.0.1",
     "react-scroll": "^1.8.7",
-    "react-scroll-to-top": "^3.0.0"
+    "react-scroll-to-top": "^3.0.0",
+    "stable": "^0.1.8"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",
