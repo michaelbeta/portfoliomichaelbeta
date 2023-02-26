@@ -27,6 +27,26 @@ const SobreMi = (props) => {
               </section>
             </div>
           </article>
+          {/*Experiencia laboral*/}
+          <article className={Styled.ExperienciaLaboral_info}>
+            <h1 title="Experiencia laboral" className={Styled.ExperienciaLaboral_titulo}>
+              {props.TituloExperienciaLaboral}
+            </h1>
+            <div className={Styled.ExperienciaLaboral_Lista}>
+              <div className={Styled.ExperienciaLaboral_Lista_1}>
+                <h3>{props.ExperienciaLaboral_1_Puesto}</h3>
+                <p><strong>{props.ExperienciaLaboral_1_Empresa}</strong></p>
+                <p>{props.ExperienciaLaboral_1_Tiempo}</p>
+                <p>{props.ExperienciaLaboral_1_Descripcion}</p>
+              </div>
+              <div className={Styled.ExperienciaLaboral_Lista_1}>
+                <h3>{props.ExperienciaLaboral_2_Puesto}</h3>
+                <p><strong>{props.ExperienciaLaboral_2_Empresa}</strong></p>
+                <p>{props.ExperienciaLaboral_2_Tiempo}</p>
+                <p>{props.ExperienciaLaboral_2_Descripcion}</p>
+              </div>
+            </div>
+          </article>
           {/*SKILLS*/}
           <article className={Styled.Skills_container_info}>
             <h1 title="Habilidades" className={Styled.Skills_container_titulo}>
@@ -39,6 +59,18 @@ const SobreMi = (props) => {
                 </div>
               })}
             </div>
+          </article>
+          {/*Idiomas*/}
+          <article className={Styled.Idiomas_info}>
+            <h1 title="Experiencia laboral" className={Styled.TituloIdiomas}>
+              {props.TituloIdiomas}
+            </h1>
+            <p className={Styled.Idiomas_Lista}>
+              {props.Lista_idiomas_1}
+            </p>
+            <p className={Styled.Idiomas_Lista}>
+              {props.Lista_idiomas_2}
+            </p>
           </article>
         </div>
       </section>

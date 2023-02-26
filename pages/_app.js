@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+//import { appWithTranslation } from "next-i18next";
 import '../styles/header/menu.css'
 import Head from 'next/head';
 import "bootstrap/dist/css/bootstrap.css";

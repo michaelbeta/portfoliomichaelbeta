@@ -42,6 +42,19 @@ const Home = (props) => {
             TituloSkills="Habilidades"
             Tituloestudios={"Formación"}
             estudios={"En estos momentos me encuentro por finalizar el Bachillerato en Informática Empresarial en la UCR(Universidad de Costa Rica)."}
+            TituloExperienciaLaboral={"Experiencia laboral"}
+            ExperienciaLaboral_1_Puesto={"Desarrollador de software"}
+            ExperienciaLaboral_1_Empresa={"Pay Tech Solutions"}
+            ExperienciaLaboral_1_Tiempo={"09-2022 – actualmente"}
+            ExperienciaLaboral_1_Descripcion={"• Analizo y corrijo errores reportados en los sistemas internos de la empresa y de los clientes corporativos, brindando soporte para la mejora de los sistemas."
+              + "\n\n• Desarrollo tanto Back End como Front End para los diferentes sistemas internos de la empresa y de los clientes corporativos."}
+            ExperienciaLaboral_2_Puesto={"Desarollador Front-end"}
+            ExperienciaLaboral_2_Empresa={"LisTica/Pasante"}
+            ExperienciaLaboral_2_Tiempo={"03-2022 – 08-2022"}
+            ExperienciaLaboral_2_Descripcion={"• Implemente diferentes componentes a partir de los diseños presentados para el proyecto Smart CMS (Desarrollo de un sistema modular personalizable de gestión de contenidos para confección de páginas web), siendo estos reutilizables y dinámicos."}
+            TituloIdiomas={"Idiomas"}
+            Lista_idiomas_1={"• Inglés A2"}
+            Lista_idiomas_2={"• Español nativo"}
           />
         </div>
         <Proyectos />
