@@ -109,6 +109,27 @@
 
     background-size: 100% 2px ;
 }
+.SobreMi_container #CV{
+
+    display: inline-flex;
+    text-align: center; 
+    font-family: 'Finger Paint', 'cursive';
+    margin:4rem auto 0 auto;
+}
+#CV >*:hover{
+
+    background-color:rgba(80, 152, 170, 0.555);
+    color: #273755;
+}
+#CV >*{
+
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: #273755;
+    color: white;
+
+}
 /*FIN experincia laboral*/
 @media (orientation:portrait) {
     #Container_SobreMi {

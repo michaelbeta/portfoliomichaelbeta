@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Styled from '../../styles/SobreMi/SobreMi.module.css';
 import Skills from "../../models/sobreMi/skills";
 import { Element } from 'react-scroll'
@@ -72,6 +73,10 @@ const SobreMi = (props) => {
               {props.Lista_idiomas_2}
             </p>
           </article>
+          <div id={Styled.CV}>
+            {/*Descargar curriculum*/}
+            <Link href="/archivos/Michael Betancourt Mora-Curriculum_.pdf">Descargar CV</Link>
+          </div>
         </div>
       </section>
     </Element>
